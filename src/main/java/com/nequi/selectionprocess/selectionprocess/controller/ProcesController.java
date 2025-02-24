@@ -86,7 +86,7 @@ public class ProcesController {
      *         proceso con el ID especificado.
      */
     @PutMapping("/{id}")
-    public ResponseEntity<ProcessEntity> putMethodUpdateState(@PathVariable Integer id,
+    public ResponseEntity<ProcessEntity> putMethodUpdateProcess(@PathVariable Integer id,
             @RequestBody ProcessEntity processE) {
         return procesService.updateProcess(id, processE)
                 .map(ResponseEntity::ok)

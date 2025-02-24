@@ -88,7 +88,7 @@ public class RoleIdController {
      *         rol con el ID especificado.
      */
     @PutMapping("/{id}")
-    public ResponseEntity<RoleIdEntity> putMethodUpdateState(@PathVariable Integer id, @RequestBody RoleIdEntity rol) {
+    public ResponseEntity<RoleIdEntity> putMethodUpdateRoleId(@PathVariable Integer id, @RequestBody RoleIdEntity rol) {
         return roleIdService.updateRoleId(id, rol)
                 .map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
