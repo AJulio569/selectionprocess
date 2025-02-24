@@ -13,13 +13,7 @@ import com.nequi.selectionprocess.selectionprocess.entity.VacancyEntity;
 @Repository
 public interface VacancyRepository  extends JpaRepository<VacancyEntity,Integer>{
 
-     /**
-     * Busca vacantes cuyos identificadores contienen el valor especificado.
-     * @param id el valor a buscar en los identificadores de las vacantes.
-     * @return una lista de vacantes cuyos identificadores contienen el valor dado.
-     */
-    // List<VacancyEntity> findByIdContainingVacancy(Integer id);
-
+ 
 
 
     

@@ -11,6 +11,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 /**
  * Representa la tabla de vacantes en la base de datos.
@@ -25,6 +26,7 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Table(name = "vacancy")
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class VacancyEntity {

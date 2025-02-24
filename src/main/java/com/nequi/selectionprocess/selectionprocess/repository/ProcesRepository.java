@@ -14,12 +14,6 @@ import com.nequi.selectionprocess.selectionprocess.entity.ProcessEntity;
 @Repository
 public interface ProcesRepository extends JpaRepository<ProcessEntity ,Integer>{
 
-    /**
-     * Busca procesos cuyos identificadores contienen el valor especificado.
-     * @param id el valor a buscar en los identificadores de los procesos.
-     * @return una lista de procesos cuyos identificadores contienen el valor dado.
-     */
-    // List<ProcessEntity>  findByIdContainingProcess(Integer id);
 
 
    
